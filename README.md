@@ -7,3 +7,4 @@
 - [ ] Group by letter anchor
 - [ ] Load data from json
 - [ ] Improve Readme ... you lazy sh...
+- [ ] Improve UI colors (red to yellow looks better)
