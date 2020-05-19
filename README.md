@@ -10,3 +10,4 @@
 - [ ] Improve UI colors (red to yellow looks better)
 - [ ] Improve desktop UI (max width maybe)
 - [ ] Add term resources support (external links)
+- [ ] Add share term support
