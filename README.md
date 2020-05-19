@@ -8,3 +8,5 @@
 - [ ] Load data from json
 - [ ] Improve Readme ... you lazy sh...
 - [ ] Improve UI colors (red to yellow looks better)
+- [ ] Improve desktop UI (max width maybe)
+- [ ] Add term resources support (external links)
