@@ -1,0 +1,32 @@
+.container {
+  border: 1px solid var(--color-gray);
+  background-color: white;
+  margin: 25px 0;
+  padding: 20px;
+  position: relative;
+}
+
+.container:target::before {
+  background: linear-gradient(
+    315deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  bottom: -10px;
+  content: "";
+  left: -10px;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  z-index: -1;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.description {
+  margin: 0;
+}
