@@ -3,12 +3,11 @@
 ## TODO
 
 - [ ] Deploy to github pages
-- [ ] Add continous integration
-- [ ] Group by letter anchor
+- [ ] Add continuos integration
 - [ ] Load data from json
 - [ ] Improve Readme ... you lazy sh...
-- [ ] Improve UI colors (red to yellow looks better)
 - [ ] Improve desktop UI (max width maybe)
 - [ ] Add term resources support (external links)
-- [ ] Add share term support
 - [ ] Add animations (but where?)
+- [ ] Add share term support
+- [ ] Fix jump on location hash change

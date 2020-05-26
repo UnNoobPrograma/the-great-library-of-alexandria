@@ -5,7 +5,7 @@ import { container, item, selected } from "./styles.module.css";
 export default function LetterGroups({ letters, onClick, selectedLetter }) {
   return (
     <ul className={container}>
-      {letters.map((letter) => (
+      {letters.map(({ letter }) => (
         <li
           onClick={() => onClick(letter)}
           className={`${item} ${

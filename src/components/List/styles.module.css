@@ -1,2 +1,6 @@
 .container {
 }
+
+.groupContainer {
+  position: relative;
+}

@@ -1,5 +1,10 @@
 :root {
   --color-gray: #dedede;
+  --gradient: linear-gradient(
+    120deg,
+    rgba(250, 115, 115, 1) 0%,
+    rgba(255, 170, 9, 1) 50%
+  );
 }
 
 body {
@@ -15,5 +20,5 @@ code {
 }
 
 .container {
-  margin: 60px;
+  margin: 60px 70px;
 }

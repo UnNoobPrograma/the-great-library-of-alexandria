@@ -25,36 +25,59 @@ const data = [
   },
 ];
 
-let letters = data.reduce((letters, { title }) => {
-  const letter = title[0].toLowerCase();
+let letters = data.reduce((letters, term) => {
+  const letter = term.title[0].toLowerCase();
 
-  return {
-    ...letters,
-    [letter]: true,
-  };
+  if (letters[letter]) {
+    return {
+      ...letters,
+      [letter]: {
+        terms: [...letters[letter].terms, term],
+      },
+    };
+  } else {
+    return {
+      ...letters,
+      [letter]: {
+        terms: [term],
+      },
+    };
+  }
 }, {});
 
 letters = Object.entries(letters)
-  .map((data) => data[0].toUpperCase())
-  .sort();
+  .map((data) => ({
+    letter: data[0].toUpperCase(),
+    terms: data[1].terms,
+  }))
+  .sort((a, b) => {
+    return a.letter < b.letter ? -1 : 1;
+  });
 
 function App() {
-  const [state, setState] = useState({ terms: data, filterByLetter: false });
+  const [state, setState] = useState({ terms: letters, filterByLetter: false });
 
   const { terms, filterByLetter } = state;
 
   function onFilterByValue(value) {
     const regExp = new RegExp(value, "i");
 
-    const newTerms = data.filter((term) => {
-      const termFields = Object.entries(term);
+    const newTerms = letters.map((letterGroup) => {
+      const newTerms = letterGroup.terms.filter((term) => {
+        const termFields = Object.entries(term);
 
-      const hasValue = termFields.reduce(
-        (prev, term) => prev || regExp.test(term[1]),
-        false
-      );
+        const hasValue = termFields.reduce(
+          (prev, term) => prev || regExp.test(term[1]),
+          false
+        );
 
-      return hasValue;
+        return hasValue;
+      });
+
+      return {
+        ...letterGroup,
+        terms: newTerms,
+      };
     });
 
     setState({
@@ -66,8 +89,15 @@ function App() {
     const regExp = new RegExp(`^${letter}`, "i");
 
     if (letter !== filterByLetter) {
-      const newTerms = data.filter(({ title }) => {
-        return regExp.test(title);
+      const newTerms = letters.map((letterGroup) => {
+        const newTerms = letterGroup.terms.filter(({ title }) => {
+          return regExp.test(title);
+        });
+
+        return {
+          ...letterGroup,
+          terms: newTerms,
+        };
       });
 
       setState({
@@ -76,7 +106,7 @@ function App() {
       });
     } else {
       setState({
-        terms: data,
+        terms: letters,
         filterByLetter: false,
       });
     }
@@ -90,7 +120,7 @@ function App() {
         selectedLetter={filterByLetter}
       />
       <Filter onChange={onFilterByValue} />
-      <List terms={terms} />
+      <List terms={terms.filter(({ terms }) => terms.length > 0)} />
     </div>
   );
 }

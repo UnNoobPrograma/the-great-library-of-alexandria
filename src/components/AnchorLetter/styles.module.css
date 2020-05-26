@@ -1,0 +1,17 @@
+.container {
+  left: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transform: translateX(calc(-100% - 10px));
+}
+
+.letter {
+  background-color: white;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 0.8;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}

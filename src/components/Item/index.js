@@ -10,7 +10,11 @@ export default function Item({ abbr, title, description }) {
   const hash = abbr || title;
 
   return (
-    <div id={hash.toLowerCase()} className={container}>
+    <div
+      onClick={() => (window.location.hash = hash.toLowerCase())}
+      id={hash.toLowerCase()}
+      className={container}
+    >
       <dt className={titleClass}>
         {abbr ? <abbr title={title}>{abbr}</abbr> : title}
       </dt>
