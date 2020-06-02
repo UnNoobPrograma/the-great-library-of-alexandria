@@ -2,10 +2,10 @@ import React from "react";
 
 import { container, groupContainer } from "./styles.module.css";
 
-import Item from "../Item";
+import Term from "../Term";
 import AnchorLetter from "../AnchorLetter";
 
-export default function List({ terms }) {
+export default function List({ terms, share }) {
   return (
     <dl className={container}>
       {terms.map((letterGroup) => {
@@ -13,7 +13,7 @@ export default function List({ terms }) {
           <div className={groupContainer} key={letterGroup.letter}>
             <AnchorLetter letter={letterGroup.letter} />
             {letterGroup.terms.map((item, index) => (
-              <Item key={`${item.title}-${index}`} {...item} />
+              <Term share={share} key={`${item.title}-${index}`} {...item} />
             ))}
           </div>
         );

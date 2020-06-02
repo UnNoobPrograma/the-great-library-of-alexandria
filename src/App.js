@@ -6,26 +6,11 @@ import { container } from "./index.module.css";
 import Filter from "./components/Filter";
 import LetterGroups from "./components/LetterGroups";
 import List from "./components/List";
+import Sharer from "./components/Sharer";
 
-const data = [
-  {
-    abbr: "HTML",
-    title: "HyperTextMarkupLanguage",
-    description: "lorem1 HTML blah ... blah ... blah",
-  },
-  {
-    abbr: "CSS",
-    title: "CascadeStyleSheet",
-    description: "lorem2 HTML blah ... blah ... blah",
-  },
-  {
-    abbr: "JS",
-    title: "Javascript",
-    description: "lorem3 HTML blah ... blah ... blah",
-  },
-];
+import { terms } from "./data.json";
 
-let letters = data.reduce((letters, term) => {
+let letters = terms.reduce((letters, term) => {
   const letter = term.title[0].toLowerCase();
 
   if (letters[letter]) {
@@ -56,6 +41,7 @@ letters = Object.entries(letters)
 
 function App() {
   const [state, setState] = useState({ terms: letters, filterByLetter: false });
+  const [shareUrl, setShareUrl] = useState();
 
   const { terms, filterByLetter } = state;
 
@@ -120,7 +106,17 @@ function App() {
         selectedLetter={filterByLetter}
       />
       <Filter onChange={onFilterByValue} />
-      <List terms={terms.filter(({ terms }) => terms.length > 0)} />
+      <List
+        share={(url) => {
+          setShareUrl(url);
+
+          setTimeout(() => {
+            setShareUrl();
+          }, 10 * 1000);
+        }}
+        terms={terms.filter(({ terms }) => terms.length > 0)}
+      />
+      {shareUrl && <Sharer url={shareUrl} />}
     </div>
   );
 }

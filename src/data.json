@@ -1,0 +1,32 @@
+{
+  "terms": [
+    {
+      "abbr": "HTML",
+      "title": "HyperTextMarkupLanguage",
+      "description": "HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.",
+      "resources": [
+        {
+          "label": "Mozilla Web Developer",
+          "url": "https://developer.mozilla.org/es/docs/Web/HTML"
+        }
+      ]
+    },
+
+    {
+      "abbr": "CSS",
+      "title": "CascadeStyleSheet",
+      "description": "TBD"
+    },
+    {
+      "abbr": "JS",
+      "title": "Javascript",
+      "description": "TBD",
+      "resources": [
+        {
+          "label": "Mozilla Web Developer",
+          "url": "https://developer.mozilla.org/es/docs/Web/JavaScript"
+        }
+      ]
+    }
+  ]
+}

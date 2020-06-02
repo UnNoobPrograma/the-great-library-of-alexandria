@@ -1,8 +1,9 @@
 :root {
+  --color-red: rgba(250, 115, 115, 1);
   --color-gray: #dedede;
   --gradient: linear-gradient(
     120deg,
-    rgba(250, 115, 115, 1) 0%,
+    var(--color-red) 0%,
     rgba(255, 170, 9, 1) 50%
   );
 }

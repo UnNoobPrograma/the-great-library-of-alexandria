@@ -5,8 +5,8 @@
 }
 
 .item {
-  composes: container from "../Item/styles.module.css";
-  composes: title from "../Item/styles.module.css";
+  composes: container from "../Term/styles.module.css";
+  composes: title from "../Term/styles.module.css";
 
   cursor: pointer;
   display: block;

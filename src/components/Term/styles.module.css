@@ -25,3 +25,34 @@
 .description {
   margin: 0;
 }
+
+.details {
+  background-color: white;
+  transition: background-color 300ms ease-in-out;
+  margin-top: 1.5em;
+  padding: 0.5em;
+}
+
+.details[open] {
+  background-color: rgba(255, 170, 9, 0.15);
+}
+
+.details a {
+  color: #c0392b;
+}
+
+.summary {
+  padding: 0.5em;
+  position: relative;
+}
+
+.summary:focus {
+  outline: 0;
+}
+
+.share {
+  margin: 1em;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
