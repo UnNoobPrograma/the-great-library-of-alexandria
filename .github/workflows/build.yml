@@ -28,6 +28,9 @@ jobs:
       - name: Run build
         run: npm run build
 
+      - name: Delete docs folder
+        run: rm -rf docs
+
       - name: Move build folder to docs
         run: mv build docs
 
