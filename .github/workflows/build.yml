@@ -27,3 +27,20 @@ jobs:
 
       - name: Run build
         run: npm run build
+
+      - name: Move build folder to docs
+        run: mv build docs
+
+      - name: Config git author
+        run: |
+          git config --global user.name "Link Strifer"
+          git config --global user.email "linkstrifer@users.noreply.github.com"
+
+      - name: Commit generated files
+        run: |
+          git status
+          git add .
+          git commit -m "Automated commit: Generated doc files"
+
+      - name: Git push
+        run: git push
