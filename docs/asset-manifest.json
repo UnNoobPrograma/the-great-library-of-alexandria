@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/the-great-library-of-alexandria/static/css/main.1c32549a.chunk.css",
-    "main.js": "/the-great-library-of-alexandria/static/js/main.6a807be5.chunk.js",
-    "main.js.map": "/the-great-library-of-alexandria/static/js/main.6a807be5.chunk.js.map",
-    "runtime-main.js": "/the-great-library-of-alexandria/static/js/runtime-main.edc3b371.js",
-    "runtime-main.js.map": "/the-great-library-of-alexandria/static/js/runtime-main.edc3b371.js.map",
-    "static/js/2.241541c8.chunk.js": "/the-great-library-of-alexandria/static/js/2.241541c8.chunk.js",
-    "static/js/2.241541c8.chunk.js.map": "/the-great-library-of-alexandria/static/js/2.241541c8.chunk.js.map",
+    "main.css": "/the-great-library-of-alexandria/static/css/main.38ea1ee4.chunk.css",
+    "main.js": "/the-great-library-of-alexandria/static/js/main.acb6a875.chunk.js",
+    "main.js.map": "/the-great-library-of-alexandria/static/js/main.acb6a875.chunk.js.map",
+    "runtime-main.js": "/the-great-library-of-alexandria/static/js/runtime-main.86f9517d.js",
+    "runtime-main.js.map": "/the-great-library-of-alexandria/static/js/runtime-main.86f9517d.js.map",
+    "static/js/2.657eba9c.chunk.js": "/the-great-library-of-alexandria/static/js/2.657eba9c.chunk.js",
+    "static/js/2.657eba9c.chunk.js.map": "/the-great-library-of-alexandria/static/js/2.657eba9c.chunk.js.map",
     "index.html": "/the-great-library-of-alexandria/index.html",
-    "precache-manifest.2133cc3ab3ddb74c01c61d542ad6ca3a.js": "/the-great-library-of-alexandria/precache-manifest.2133cc3ab3ddb74c01c61d542ad6ca3a.js",
+    "precache-manifest.29aeec360a4b66e868b2d633477f5c19.js": "/the-great-library-of-alexandria/precache-manifest.29aeec360a4b66e868b2d633477f5c19.js",
     "service-worker.js": "/the-great-library-of-alexandria/service-worker.js",
-    "static/css/main.1c32549a.chunk.css.map": "/the-great-library-of-alexandria/static/css/main.1c32549a.chunk.css.map",
-    "static/js/2.241541c8.chunk.js.LICENSE.txt": "/the-great-library-of-alexandria/static/js/2.241541c8.chunk.js.LICENSE.txt"
+    "static/css/main.38ea1ee4.chunk.css.map": "/the-great-library-of-alexandria/static/css/main.38ea1ee4.chunk.css.map",
+    "static/js/2.657eba9c.chunk.js.LICENSE.txt": "/the-great-library-of-alexandria/static/js/2.657eba9c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.edc3b371.js",
-    "static/js/2.241541c8.chunk.js",
-    "static/css/main.1c32549a.chunk.css",
-    "static/js/main.6a807be5.chunk.js"
+    "static/js/runtime-main.86f9517d.js",
+    "static/js/2.657eba9c.chunk.js",
+    "static/css/main.38ea1ee4.chunk.css",
+    "static/js/main.acb6a875.chunk.js"
   ]
 }
