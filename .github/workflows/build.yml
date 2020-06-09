@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: User Node.js ${{ matrix.node-version }}
-        uses: actions/checkout@v1
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
 
@@ -40,7 +40,7 @@ jobs:
         run: |
           git status
           git add .
-          git commit -m "Automated commit: Generated doc files"
+          git commit -am "Automated commit: Generated doc files"
 
       - name: Git push
         run: git push
