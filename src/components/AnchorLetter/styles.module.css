@@ -3,7 +3,8 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  transform: translateX(calc(-100% - 10px));
+  transform: translateX(calc(-100% - 5px));
+  z-index: -1;
 }
 
 .letter {
@@ -11,7 +12,7 @@
   font-size: 2em;
   font-weight: bold;
   line-height: 0.8;
-  padding: 15px;
+  padding: 10px;
   position: sticky;
   top: 0;
 }
