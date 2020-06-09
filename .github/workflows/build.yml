@@ -43,4 +43,4 @@ jobs:
           git commit -m "Automated commit: Generated doc files"
 
       - name: Git push
-        run: git push
+        run: git push origin HEAD
