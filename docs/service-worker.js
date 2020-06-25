@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/the-great-library-of-alexandria/precache-manifest.29aeec360a4b66e868b2d633477f5c19.js"
+  "/the-great-library-of-alexandria/precache-manifest.ac8d1b715a1e73942b1934fe905e0949.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a7ecb8c80737ba9ec24f5e5a930574aa",
+    "revision": "008bb72e84b520ee6c74dbddade8a6f7",
     "url": "/the-great-library-of-alexandria/index.html"
   },
   {
-    "revision": "931d330d7f87cfd313c5",
-    "url": "/the-great-library-of-alexandria/static/css/main.38ea1ee4.chunk.css"
+    "revision": "f7f0b8d2ca2e56ce844e",
+    "url": "/the-great-library-of-alexandria/static/css/main.c0327a2d.chunk.css"
   },
   {
     "revision": "10de4eb31fa186f031a0",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-great-library-of-alexandria/static/js/2.657eba9c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "931d330d7f87cfd313c5",
-    "url": "/the-great-library-of-alexandria/static/js/main.acb6a875.chunk.js"
+    "revision": "f7f0b8d2ca2e56ce844e",
+    "url": "/the-great-library-of-alexandria/static/js/main.bffc851b.chunk.js"
   },
   {
     "revision": "708270fc492e26eaceeb",
